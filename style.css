@@ -101,7 +101,7 @@ body {
 }
 
 .skills-list dt {
-  padding-left: 32px;
+  padding-left: 42px;
   background-repeat: no-repeat;
   background-position: left;
 }
@@ -198,4 +198,72 @@ body {
 .footer-phone {
   padding-left: 25px;
   background-image: url("img/icon-phone.svg");
+}
+
+.page-header .container {
+  max-width: 1408px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.page-header .container nav,
+.main-menu> li
+{
+  flex-grow: 1;
+}
+
+header nav .main-menu
+{
+display: flex;
+list-style: none;
+margin: 0;
+padding: 0;
+flex-grow: 1;
+justify-content: flex-start;
+}
+
+nav .main-menu .about-me ul
+{
+  list-style: none;
+  text-align: left;
+  padding: 10px;
+ display: none;
+}
+
+.main-menu a
+{
+  margin: 0;
+  padding: 0 30px 0;
+  text-align: left;
+}
+
+.main-menu li a
+{
+  display: block;
+  flex-grow: 1;
+}
+
+.main-menu >li a:hover
+{
+  background-color:rgba(80,00,80,1); 
+}
+
+.main-menu .about-me:hover ul{
+display: block;
+position: absolute;
+}
+
+.about-me
+{
+  position: relative;
+}
+
+figure
+{
+  text-align: center;
+}
+figure img
+{
+  border-radius: 2%;
+  filter:sepia(6%) brightness(90%) contrast(1);
 }
